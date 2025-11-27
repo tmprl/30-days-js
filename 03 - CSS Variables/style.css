@@ -17,6 +17,12 @@ img {
     width: 800px;
     height: 500px;
     padding: var(--spacing);
+    background-color: var(--base);
+    filter: blur(var(--blur))
+}
+
+.hl {
+    color: var(--base)
 }
 
 .controls {
