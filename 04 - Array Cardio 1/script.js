@@ -55,17 +55,37 @@ const orderedBirthDate = inventors.sort(function(a, b){
 });
 console.log(orderedBirthDate);
     // Array.prototype.reduce()
-    // 4. How many years did all the inventors live all together?
+    // 4. How many years did all the inventors live all together
+    
+    // const totalYears = inventors.reduce(function(total, inventor){
+    //     return total + (inventor.passed - inventor.year);
+    // },0 );
+    // console.log(totalYears)
+
+    let totalYears = 0;
+    for(let i = 0; i < inventors.length;i++) {
+        totalYears = totalYears + inventors[i].passed - inventors[i].year;
+    }
+    console.log(totalYears);
 
     // 5. Sort the inventors by years lived
 
+    const oldest = inventors.sort((a, b) => {
+        const lastGuy = a.passed - a.year;
+        const nextGuy = b.passed - b.year;
+        if(lastGuy > nextGuy) {
+            return -1;
+        } else
+            return 1;
+    })
+    console.table(oldest);
     // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
     // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
 
     // 7. sort Exercise
     // Sort the people alphabetically by last name
-    
+
 
     // 8. Reduce Exercise
     // Sum up the instances of each of these
