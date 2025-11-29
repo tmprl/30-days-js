@@ -12,10 +12,9 @@ The purpose of this challenge is to improve consistency, strengthen core JavaScr
 - Practice DOM manipulation  
 - Work with events and browser APIs  
 - Improve JS logic and problem-solving  
-- Build a habit of coding every day  
-- Create a portfolio of real, working projects
+- Build a habit of coding every day
 
 ## 📁 Structure
-Each project is located in its own folder:
+Each project is located in its own folder
 
 
